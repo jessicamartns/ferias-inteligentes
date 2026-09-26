@@ -28,7 +28,7 @@ export function VacationForm() {
       <h1>Planejador de férias</h1>
 
       <label>
-        Dias de férias
+        Dias de férias 
       </label>
 
       <input
