@@ -1,4 +1,5 @@
 import type { ISODate } from "./date"
+import type { WorkSchedule } from "./workSchedule"
 
 export interface VacationInput {
   availableDays: number
@@ -10,4 +11,6 @@ export interface VacationInput {
 
   city: string
   state: string
+
+  workSchedule: WorkSchedule
 }

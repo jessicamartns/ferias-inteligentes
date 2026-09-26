@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { optimizeVacation } from "../domain/vacation/optimizer"
+import {MONDAY_TO_FRIDAY} from "../domain/vacation/workSchedule"
 
 export function VacationForm() {
   const [availableDays, setAvailableDays] = useState(30)
@@ -14,6 +15,7 @@ export function VacationForm() {
       deadline: "2027-07-04",
       city: "Campinas",
       state: "SP",
+      workSchedule: MONDAY_TO_FRIDAY,
     }
 
     const result = optimizeVacation(input)
